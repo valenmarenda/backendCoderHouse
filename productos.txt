@@ -1,0 +1,26 @@
+[
+	{
+		"name": "arroz",
+		"price": 100,
+		"foto": "foto",
+		"id": 0
+	},
+	{
+		"name": "queso",
+		"price": 50,
+		"foto": "foto",
+		"id": 1
+	},
+	{
+		"name": "arroz",
+		"price": 100,
+		"foto": "foto",
+		"id": 2
+	},
+	{
+		"name": "queso",
+		"price": 50,
+		"foto": "foto",
+		"id": 3
+	}
+]
