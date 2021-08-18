@@ -1,0 +1,38 @@
+[
+	{
+		"title": "Napkin - Beverage 1 Ply",
+		"price": 825,
+		"thumbnail": "https://robohash.org/voluptatumetcorrupti.png?size=50x50&set=set1",
+		"id": 0
+	},
+	{
+		"title": "Ketchup - Tomato",
+		"price": 980,
+		"thumbnail": "https://robohash.org/saepevoluptasnulla.png?size=50x50&set=set1",
+		"id": 1
+	},
+	{
+		"title": "Cumin - Whole",
+		"price": 499,
+		"thumbnail": "https://robohash.org/fugiatdoloresse.png?size=50x50&set=set1",
+		"id": 2
+	},
+	{
+		"title": "Napkin - Beverage 1 Ply",
+		"price": 825,
+		"thumbnail": "https://robohash.org/voluptatumetcorrupti.png?size=50x50&set=set1",
+		"id": 3
+	},
+	{
+		"title": "Ketchup - Tomato",
+		"price": 980,
+		"thumbnail": "https://robohash.org/saepevoluptasnulla.png?size=50x50&set=set1",
+		"id": 4
+	},
+	{
+		"title": "Cumin - Whole",
+		"price": 499,
+		"thumbnail": "https://robohash.org/fugiatdoloresse.png?size=50x50&set=set1",
+		"id": 5
+	}
+]
