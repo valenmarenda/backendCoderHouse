@@ -1,4 +1,4 @@
-//const moment = require ('moment');
+ /*//const moment = require ('moment');
 const express = require ('express');
 const fs = require('fs');
 //const { json } = require('express');
@@ -6,7 +6,7 @@ const fs = require('fs');
 const app = express()
 const port = 8080;
 
-const server = app.listen(port, ()=>{
+app.listen(port, ()=>{
     console.log(`escuchando ${port} `)
 })
 
@@ -66,4 +66,4 @@ app.get("/visitas", async (req, res) => {
   res.send(
     `el número de visitas a /items es ${visitaItems} y a /items-random ${randomItems}`
   );
-});
+});*/
