@@ -70,28 +70,30 @@ app.get("/api/productos/listar", (req, res)=>{
 })
 
 //b 
-app.get('/api/productos/listar/:id', (req, res) => {
-	fs.promises
-	.readFile("./productosD8.txt")
-	.then(data=>data.toString('utf-8'))
-	.then(datos=>{ 
-	 if(!isNaN(req.params.id) && datos.length > req.params.id){
-       const search = datos.filter( product => product.id === parseInt(req.params.id,10))
-       res.send(...search ) 
-    }else{
-       res.send({error: 'producto no encontrado'})
-    }
- })
 
-})
+
+app.get("/api/productos/listar/:id", async (req, res) => {
+	const listaProductos = await fs.promises.readFile("./productosD8.txt");
+	const producto = JSON.parse(listaProductos);
+
+	//console.log(listaProductos)
+	if (!isNaN(req.params.id) && producto.length > req.params.id) {
+	  const search = producto.filter(
+		(product) => product.id === parseInt(req.params.id, 10)
+	  );
+	  res.send(...search);
+	} else {
+	  res.send({ error: "producto no encontrado" });
+	}
+  });
 
  //c
- app.post("api/productos/guardar", (req, res)=>{
-	let myfile = new Archivo ('./productosD8.txt');
-	let saveProduct = req.body;
-	myfile.guardarAsync(saveProduct);
-	return res.json({msg:"producto guardado"})
-})
+ app.post("/api/productos/guardar", async (req, res) => {
+	const { title, price, thumbnail } = req.body;
+  
+	await myfile.guardarAsync({ title, price, thumbnail });
+	return res.json({ msg: "producto guardado" });
+  });
 
 
 
