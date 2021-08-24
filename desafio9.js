@@ -14,7 +14,7 @@ app.use(express.text());
 app.use(express.urlencoded({ extended: true }));
 
 router.get('/test', (req, res)=>{
-    res.send("test")
+   res.send("test")
 })
 
 //archivo estático público
