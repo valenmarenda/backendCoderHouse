@@ -100,7 +100,7 @@ router.get("/api/productos/listar/:id", (req, res) => {
 
   // Cargar productos
 
-  let storage = multer.diskStorage({
+  let storange = multer.diskStorage({
      destination:function(req, file, callback){
       callback(null, "uploads")
     }, 

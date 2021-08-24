@@ -1,4 +1,4 @@
-const express = require ('express');
+/*const express = require ('express');
 const fs = require('fs');
 //const { json } = require('express');
 //const products = require('./routes/routes')
@@ -24,4 +24,4 @@ app.get('/cte1',(req, res)=>{
 const server = app.listen(port, ()=>{
     console.log(`servidor http escuchando en el puerto ${port} `)
 })
-server.on("error", error => console.log(`Error en el servidor ${error}`))
+server.on("error", error => console.log(`Error en el servidor ${error}`))*/
