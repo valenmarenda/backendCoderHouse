@@ -5,6 +5,7 @@ const router = express.Router();
 const multer =require ("multer")
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+const hanblebars = require("express-handlebars")
 
 let productos = [];
 
@@ -123,10 +124,37 @@ router.get("/api/productos/listar/:id", (req, res) => {
       }
   
       productos.push(new Producto(title, price, thumbnail));
-      res.send(productos[productos.length - 1]);
+      res.redirect("/");
     } catch (error) {
       res.status(404).json(error);
     }
   });
 
+
+  app.engine("hbs", hanblebars(
+    {
+        extname:".hbs",
+        defaultLayout:"indexClase10.hbs",
+        layoutsDir: __dirname + "/views/layouts",
+        partialsDir:__dirname + "/views/partials"
+    }
+))
+app.set("views", "./views");
+app.set("view engine", "hbs");
+app.use(express.static("public"));
+
+//desafio 10
+router.get('/productos/vistas',(req, res)=>{
+  try {
+    if (productos.length === 0) {
+      res.status(404).json("No hay productos" );
+    } else {
+      res.status(200).json(productos);
+    }
+  } catch (err) {
+    res.status(404).json(err);
+  }
+    
+    res.render("main", productos)
+})
 module.exports = router

@@ -1,5 +1,5 @@
 //const moment = require ('moment');
-const { query } = require('express');
+/*const { query } = require('express');
 const express = require ('express');
 const fs = require('fs');
 //const { json } = require('express');
@@ -102,4 +102,4 @@ app.get("/api/productos/listar/:id", async (req, res) => {
 const server = app.listen(port, ()=>{
     console.log(`servidor http escuchando en el puerto ${port} `)
 })
-server.on("error", error => console.log(`Error en el servidor ${error}`))
+server.on("error", error => console.log(`Error en el servidor ${error}`))*/

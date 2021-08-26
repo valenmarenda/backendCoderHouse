@@ -1,0 +1,15 @@
+{{> lovedChamps }} 
+{{> hatedChamps }}
+<p><b>{{saludo}}</b></p>
+<p><b>{{mail}}</b></p>
+<p><b>{{nombre}}</b></p>
+<ul>
+    {{#each productos}}
+    <li> {{this}} </li>
+    {{/each}}
+</ul>
+<ul>
+    {{#each ciudad}}
+    <li> {{this.name}} </li>
+    {{/each}}
+</ul>
