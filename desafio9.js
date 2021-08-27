@@ -1,4 +1,4 @@
-//const moment = require ('moment');
+/*//const moment = require ('moment');
 //const { query } = require('express');
 const express = require ('express');
 const fs = require('fs');
@@ -26,4 +26,4 @@ app.use( products)
 const server = app.listen(port, ()=>{
     console.log(`servidor http escuchando en el puerto ${port} `)
 })
-server.on("error", error => console.log(`Error en el servidor ${error}`))
+server.on("error", error => console.log(`Error en el servidor ${error}`))*/

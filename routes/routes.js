@@ -1,4 +1,4 @@
-const express = require ('express');
+/*const express = require ('express');
 const fs = require('fs');
 const app = express()
 const router = express.Router();
@@ -157,4 +157,4 @@ router.get('/productos/vistas',(req, res)=>{
     
     res.render("main", productos)
 })
-module.exports = router
+module.exports = router*/
